@@ -5,7 +5,7 @@ GO_PACKAGE_PATH ?= github.com/${GO_PACKAGE_ORG_NAME}/${GO_PACKAGE_REPO_NAME}
 
 GO111MODULE?=on
 export GO111MODULE
-goarch ?= $(shell go env GOARCH)
+goarch ?= amd64
 
 .PHONY: build
 ## Build the operator
