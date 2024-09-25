@@ -2,7 +2,7 @@ name: operator-cd
 on:
   push:
     branches:
-      - master
+      - test-changes
     tags-ignore:
       - '*.*'
 env:
@@ -43,5 +43,5 @@ jobs:
     - name: Release operator
       uses: codeready-toolchain/toolchain-cicd/release-operator-action@master
       with:
-        quay-token: ${{ secrets.QUAY_TOKEN }}
-        quay-namespace: codeready-toolchain
+        quay-token: ${{ secrets.QUAY_TOKEN_RSOARESD }}
+        quay-namespace: rsoaresd
